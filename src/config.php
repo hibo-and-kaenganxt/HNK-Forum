@@ -1,7 +1,7 @@
 <?php
 /*
  *  Main config file
- *  All settings are configurable through the setup script or the network
+ *  All settings are configurable through the setup script or the admin panel
  *  But if you need to, you can change them here too
 */
 

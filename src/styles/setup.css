@@ -1,11 +1,25 @@
 body {
     background-color:rgba(0,0,0,0.3);
+    font-family: 'Oxygen', sans-serif;
 }
 #mainElement {
-    top:5%;
+    top:10%;
     background-color:white;
     left:20%;
     width:60%;
     display:block;
-    height:30%;
+    height:25%;
+    position:absolute;
+    height:75%;
+    border-radius:10px;
+    -moz-box-shadow:    -4px -2px 10px 5px #555;
+    -webkit-box-shadow: -4px -2px 10px 5px #555;
+    box-shadow:         -4px -2px 10px 5px #555;
+    padding:1%;
+}
+.continueButton {
+    text-align:center;
+    width:100%;
+    display:block;
+    margin-top:5em;
 }
