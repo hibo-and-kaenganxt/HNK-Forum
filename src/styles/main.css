@@ -1,0 +1,16 @@
+body {
+    background-color: #2A4D6E;
+    font-family: 'Oxygen', sans-serif;
+}
+#loader {
+    display:block;
+    position:relative;
+    width:5em;
+    margin:0 auto;
+    margin-top:20%;
+    font-size:120%;
+}
+#loader>span {
+    position:relative;
+    left:0.3em;
+}
