@@ -14,3 +14,10 @@ body {
     position:relative;
     left:0.3em;
 }
+a:link,a:active,a:visited,a {
+    color: rgba(170,88,57,1);
+    text-decoration: none;
+}
+a:hover {
+    color: rgba(85,23,0,1);
+}

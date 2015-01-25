@@ -1,0 +1,29 @@
+html {
+    background-color: rgba(4,30,55,1);
+}
+body {
+    background-color: rgba(255, 237, 170,1);
+    margin: 0px auto;
+    width: 75%;
+    font-family: 'Oxygen', sans-serif;
+}
+#mainElement {
+    padding: 1em;
+}
+#loginForm {
+    margin-left: 1em;
+}
+input[type="text"], textarea, select, input[type="search"], input[type="email"], input[type="password"], input[type="number"] {
+    padding: 5px 9px;
+    display: inline-block;
+    font-family: "Oxygen",sans-serif;
+    border: 1px solid #CCC;
+    line-height: 1.4em;
+}
+input[type="button"], input[type="submit"] {
+    color: #DEE5F0;
+    cursor: pointer;
+    padding: 5px 11px;
+    border: 1px solid #224983;
+    background-color: rgba(42, 77, 110,1);
+}
