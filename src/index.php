@@ -1,6 +1,11 @@
 <?php
-    require_once "config.php";
+    include_once "config.php";
     if (isset($noSetup) && $noSetup) {
+        header("Location: setup.php");
+        exit;
+    }
+    if (!isset($config)) {
+        file_put_contents("config.php", '<?php $noSetup = true;');
         header("Location: setup.php");
         exit;
     }
@@ -17,7 +22,7 @@
     </head>
     <body>
         <div id="loader">
-            <img src="http://puu.sh/eYmYl/7a05c4c276.gif" width="90" />
+            <img src="images/init-loader.gif" width="90" />
             <span>Loading...</span>
         </div>
         <noscript>

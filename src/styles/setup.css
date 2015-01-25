@@ -16,10 +16,98 @@ body {
     -webkit-box-shadow: -4px -2px 10px 5px #555;
     box-shadow:         -4px -2px 10px 5px #555;
     padding:1%;
+    min-height:440px;
 }
 .continueButton {
     text-align:center;
     width:100%;
     display:block;
     margin-top:5em;
+}
+#mysql_config input[type=text], #mysql_config input[type=password] {
+    position:absolute;
+    left:8em;
+}
+#adminForm input[type=text], #adminForm input[type=password], #adminForm input[type=email] {
+    position:absolute;
+    left:11.4em;
+}
+.inputInfo {
+    height:1.4em;
+    margin-left:0.2em;
+    background-color:#C82824;
+    padding: 4px 9px;
+    color:white;
+    font-size:90%;
+    border-radius:5px;
+    display:none;
+}
+.mysqlInput {
+    position:absolute;
+    left:22.2em;
+}
+.adminInput {
+    position:absolute;
+    left:25em;
+}
+#db_success {
+    background-color:#338E33;
+    border-radius:5px;
+    border-style:solid;
+    border-width:1px;
+    border-color:#166E16;
+    padding:5px;
+    display:inline;
+}
+.finalBlock {
+    padding:1em;
+    margin:1.5em;
+    border-style: solid;
+    border-width: 1px;
+    border-color:rgba(0,0,0,0.5);
+    border-radius:7px;
+    display:inline-block;
+    height:11em;
+    float:left;
+}
+.finalBlock h3 {
+    margin-top:0;
+}
+#mysql_info {
+    position:absolute;
+    background-color:rgba(0,0,0,0.1);
+    border-radius:5px;
+    right:20%;
+    width:20%;
+    top:3em;
+    border-style:solid;
+    border-color:black;
+    border-width:1px;
+    padding:0.8em;
+    min-width:5em;
+}
+input[type=text], textarea, select, input[type=email], input[type=password], input[type=number] {
+    padding: 5px 9px;
+    display:inline-block;
+    font-family: Arial, Tahoma, sans-serif;
+    border: 1px dotted #ccc;
+    line-height: 1.4em;
+    min-width:14em;
+}
+input[type=text]:focus, textarea:focus, select:focus, input[type=email]:focus, input[type=password]:focus, input[type=number]:focus {
+    border-style: solid;
+    border-color: #bababa;
+}
+input[type=button], input[type=submit] {
+    color: #dee5f0;
+    cursor: pointer;
+    padding: 5px 11px;
+    border: solid 1px #224983;
+    background: #1e4c99;
+}
+input[type=button]:hover, input[type=submit]:hover {
+    background: #183d80;
+}
+input[type=button]:active, input[type=submit]:active {
+    color: #8c9dc0;
 }
