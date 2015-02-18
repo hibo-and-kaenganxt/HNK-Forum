@@ -9,7 +9,7 @@ if (!isset($_REQUEST['action']) || $_REQUEST['action'] === "") {
 }
 $input = str_replace("/", "", $_REQUEST['action']);
 if (file_exists('contents/acp/' . $input . '.php')) {
-    include_once 'contents/acp/' . $input . '.php';
+    require_once 'contents/acp/' . $input . '.php';
 } else {
     header("HTTP/1.0 404 Not Found");
     ?>
