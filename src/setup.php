@@ -160,6 +160,7 @@ if ($page === "setup") {
         </script>
     <?php
 } else if ($page === "404") {
+    header("HTTP/1.1 404 Not Found");
     ?>
         <h2>404 - Setup page not found</h2>
         <a href="setup.php">Back to last setup page</a>
