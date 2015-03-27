@@ -5,6 +5,8 @@
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="styles/acp.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen:400,300&subset=latin,latin-ext" type="text/css" />
+        <script async type="text/javascript" src="https://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha3.js"></script>
+        <script async type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     </head>
     <body>
         <div id="mainElement">
@@ -15,8 +17,6 @@
                 <input type="submit" id="submit" value="Login"/>
             </form>
         </div>
-        <script type="text/javascript" src="https://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha3.js"></script>
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script type="text/javascript">
             $('#loginForm').submit(function (e) {
                 e.preventDefault();

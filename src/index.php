@@ -16,8 +16,8 @@
         <title>Please wait...</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script type="text/javascript" src="scripts/main/loader.js"></script>
+        <script async type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script async type="text/javascript" src="scripts/main/loader.js"></script>
         <link rel="stylesheet" type="text/css" href="styles/main.css" />
     </head>
     <body>
