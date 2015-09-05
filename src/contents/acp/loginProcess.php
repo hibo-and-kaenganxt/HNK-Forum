@@ -4,5 +4,6 @@ if (!isset($_POST['username']) || !isset($_POST['password']) ) {
     exit();
 }
 session_start();
+$pass = hash("sha256", $_POST['password']);
 $sql = "";
 

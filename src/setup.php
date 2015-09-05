@@ -344,7 +344,7 @@ if ($page === "setup") {
     }
     ?>
         <h2>Admin account - <input type="button" onclick="window.location.href='setup.php?page=settings'" value="Back" /></h2>
-        <script type="text/javascript" src="https://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha3.js"></script>
+        <script type="text/javascript" src="https://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha256.js"></script>
         <form action="setup.php?page=save_admin" method="POST" id="adminForm">
             <label for="admin_email">Email: </label>
             <input type="email" id="admin_email" name="admin_email" placeholder="Email address" required value="<?php echo $email; ?>" /><span class="inputInfo adminInput" id="admin_email_info"></span>
@@ -400,10 +400,7 @@ if ($page === "setup") {
                     e.preventDefault();
                     return;
                 }
-                crypto.subtle.digest("SHA-256", new TextEncoder("utf-8").encode(pass)).then(function (hash) {
-                    return hex(hash);
-                });
-                var passEnc = CryptoJS.SHA3(pass, { outputLength: 256 });
+                var passEnc = CryptoJS.SHA256(pass);
                 $("#admin_pass_input").val(passEnc);
             });
         </script>
