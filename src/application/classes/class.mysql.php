@@ -9,7 +9,7 @@ class MySQL {
     public function __construct() {
         if (!isset($GLOBALS["config"])) {
             $config = array();
-            include_once "config.php";
+            include "config.php";
             if (!isset($config) || empty($config)) {
                 $this->error(array("code" => "MY_NO_CONFIG", "msg" => "An internal error occured!"));
                 $this->state = false;

@@ -523,7 +523,6 @@ if ($page === "setup") {
     ';
 
     file_put_contents("config.php", $content);
-    require "config.php";
     require_once "application/classes/class.mysql.php";
     $DB = new MySQL();
     $prefix = $config["DB"]["prefix"];
